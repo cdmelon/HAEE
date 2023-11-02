@@ -1,4 +1,5 @@
 # HAEE
+Code and datasets for the ISWC 2023 paper "HAEE: Low-Resource Event Detection with Hierarchy-Aware Event Graph Embeddings"
 
 ## Data File Structure
 The structure of data files is as follows: 

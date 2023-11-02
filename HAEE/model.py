@@ -25,8 +25,6 @@ logger = logging.getLogger(__name__)
 
 device = torch.device("cuda")
 
-num = 0
-
 def set_device(de):
     global device
     device = de
@@ -87,9 +85,6 @@ class NewModel(BertPreTrainedModel):
         self.re_classifier = None
 
         self.loss_scale = nn.Parameter(torch.tensor([-0.5] * 3).to(device))
-
-    def set_wandb(self, wandb):
-        self.wandb = wandb
 
     def set_config(self, config, flag=False):
         if flag:
@@ -278,10 +273,6 @@ class NewModel(BertPreTrainedModel):
         loss = loss/(2*self.loss_scale[0].exp())+self.loss_scale[0]/2
         loss += loss_p / (2 * self.loss_scale[1].exp()) + self.loss_scale[1] / 2
         loss += loss_r / (2 * self.loss_scale[2].exp()) + self.loss_scale[2] / 2
-
-
-        global num
-        num += 1
 
         outputs = (logits,) + outputs[2:]
         outputs = (loss,) + outputs

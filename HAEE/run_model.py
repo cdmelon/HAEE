@@ -494,13 +494,5 @@ def main():
     if best_steps:
         logger.info("best steps of eval f1 is the following checkpoints: %s", best_steps)
 
-    # filename = "TestData/event_embedding_final"
-    # with open(filename, 'w') as file_obj:
-    #     json.dump(model.prototypes.weight.tolist(), file_obj)
-    #
-    # filename = "TestData/relation_embedding_final"
-    # with open(filename, 'w') as file_obj:
-    #     json.dump(model.relation_embedding.tolist(), file_obj)
-
 if __name__ == "__main__":
     main()
