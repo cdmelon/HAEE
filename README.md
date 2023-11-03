@@ -76,6 +76,6 @@ These hyperparameters can be found in the ```model.py``` file.
 To reproduce the result in paper, can add the following code in ```data_utils``` in ```create_examples``` method.
 ```python
 turn += 1
-if turn % {0|2|4|10} != 1 and doc_type == DOC_TYPE_TRAIN:  #  Full|50%|25%|10%
+if turn % {2|4|10} != 1 and doc_type == DOC_TYPE_TRAIN:  #  50%|25%|10%
     continue
 ```
