@@ -79,3 +79,22 @@ turn += 1
 if turn % {2|4|10} != 1 and doc_type == DOC_TYPE_TRAIN:  #  50%|25%|10%
     continue
 ```
+
+**How to Cite**
+
+Thank you very much for your interest in our work. If you use or extend our work, please cite the following paper:
+```python
+@InProceedings{ISWC2024_HAEE,
+title="HAEE: Low-Resource Event Detection with Hierarchy-Aware Event Graph Embeddings",
+author="Ding, Guoxuan
+and Guo, Xiaobo
+and Chen, Gaode
+and Wang, Lei
+and Zha, Daren",
+booktitle="The Semantic Web -- ISWC 2023",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="61--79",
+}
+```
