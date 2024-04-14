@@ -85,7 +85,7 @@ if turn % {2|4|10} != 1 and doc_type == DOC_TYPE_TRAIN:  #  50%|25%|10%
 Thank you very much for your interest in our work. If you use or extend our work, please cite the following paper:
 ```python
 @InProceedings{ISWC2024_HAEE,
-title="HAEE: Low-Resource Event Detection with Hierarchy-Aware Event Graph Embeddings",
+title="{HAEE}: Low-Resource Event Detection with Hierarchy-Aware Event Graph Embeddings",
 author="Ding, Guoxuan
 and Guo, Xiaobo
 and Chen, Gaode
